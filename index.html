@@ -3,47 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>She Can Foundation</title>
+    <title>RoamWild Travels</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="container navbar">
-            <div class="logo">She Can <span>Foundation</span></div>
-            <nav>
-                <a href="#about" class="nav-link">About</a>
-            </nav>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">✈️ RoamWild</a>
+            <div class="nav-links">
+                <a href="#">Flights</a>
+                <a href="#">Hotels</a>
+                <a href="#" class="active-link">Buses</a>
+                <a href="#">Trains</a>
+            </div>
+            <button class="account-btn">👤 My Account</button>
+        </div>
+    </nav>
+
+    <header class="hero-banner">
+        <div class="hero-container">
+            <h1>Bus Ticket Booking</h1>
+            <p>Compare and book tickets across top premium operators</p>
+            
+            <form class="search-form">
+                <div class="input-field">
+                    <label>From</label>
+                    <input type="text" placeholder="Enter Source City" required>
+                </div>
+                <div class="input-field">
+                    <label>To</label>
+                    <input type="text" value="Bangalore" placeholder="Enter Destination" required>
+                </div>
+                <div class="input-field">
+                    <label>Travel Date</label>
+                    <input type="date" value="2026-06-06" required>
+                </div>
+                <button type="submit" class="search-submit-btn">SEARCH BUSES</button>
+            </form>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container hero-wrapper">
-            <div class="hero-content">
-                <h1>Empowering Women, <br>Shaping The Future.</h1>
-                <p>We believe in a world where every woman has the tools, education, and support to achieve her dreams and lead with confidence.</p>
-                <a href="#about" class="btn">Join Us / Volunteer</a>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600" alt="Empowered Women Together">
-            </div>
+    <main class="main-content">
+        <div class="section-header">
+            <h2>Popular Routes to Bangalore</h2>
+            <p>Found deals across verified transit routes</p>
         </div>
-    </section>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Our Foundation</h2>
-            <div class="underline"></div>
-            <p>The <strong>She Can Foundation</strong> is dedicated to breaking barriers and creating equal opportunities for girls and women worldwide. Through targeted mentorship programs, skill-development workshops, and educational advocacy, we strive to build a community where her potential is limitless. Whether through tech, entrepreneurship, or leadership, we ensure that <em>she can</em> and <em>she will</em> succeed.</p>
+        <div class="routes-stack">
+            <div class="route-card">
+                <div class="route-details">
+                    <h3>Hyderabad to Bangalore</h3>
+                    <p class="route-meta">499 kms | 10 hr 21 mins (appx.)</p>
+                    <p class="route-operators"><strong>Operators:</strong> Jabbar Travels, IntrCity SmartBus, BSR Tours</p>
+                </div>
+                <div class="route-action shadow-box">
+                    <span class="price-label">Onwards from</span>
+                    <span class="price-amount">₹80</span>
+                    <button class="view-buses-btn">VIEW BUSES</button>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 She Can Foundation. Built with genuine effort for the Web Development Internship.</p>
-        </div>
-    </footer>
+    </main>
 
 </body>
 </html>
